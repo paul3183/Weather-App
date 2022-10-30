@@ -24,34 +24,34 @@ function App() {
 
   console.log(weather);
 
-  let fundTime = weather.weather?.[0].icon;
-  let linkFund = "";
+  let fundTime = weather.weather?.[0].icon
+  let linkFund = ""
   
     switch (fundTime){
       case '01d':
         linkFund = 'https://images.pexels.com/photos/4671463/pexels-photo-4671463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-        break;
+        break
       case '01n':
         linkFund = 'https://images.pexels.com/photos/13891178/pexels-photo-13891178.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-        break;
+        break
       case '02d':
         linkFund = 'https://images.pexels.com/photos/5069533/pexels-photo-5069533.jpeg?auto=compress&cs=tinysrgb&w=800'
-        break;
+        break
       case '02n':
         linkFund = 'https://images.pexels.com/photos/13511276/pexels-photo-13511276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-        break;
+        break
       case '03d':
         linkFund = 'https://images.pexels.com/photos/12262726/pexels-photo-12262726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-        break;
+        break
       case '03n':
         linkFund = 'https://images.pexels.com/photos/12903460/pexels-photo-12903460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
         break;
       case '04d':
         linkFund = 'https://images.pexels.com/photos/11513041/pexels-photo-11513041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-        break;
+        break
       case '04n':
         linkFund = 'https://images.pexels.com/photos/12956574/pexels-photo-12956574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-        break;
+        break
       case '09d':
         linkFund = 'https://images.pexels.com/photos/2144326/pexels-photo-2144326.jpeg?auto=compress&cs=tinysrgb&w=800'
         break;
@@ -82,6 +82,8 @@ function App() {
       case '50n':
         linkFund = 'https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
         break;
+      default:
+        linkFund = 'https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2';
     }
 
     document.body.style = `background-image: url(${linkFund})`
