@@ -83,10 +83,10 @@ function App() {
         linkFund = 'https://images.pexels.com/photos/3299386/pexels-photo-3299386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
         break;
       default:
-        linkFund = 'https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2';
+        linkFund = 'https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
     }
 
-    document.body.style = `background-image: url(${linkFund})`
+    document.body.style = `background-image:url(${linkFund})`
 
   return (
     <>
@@ -98,7 +98,7 @@ function App() {
       </div>
       <div className='image_container'>
         <div className='img_cont'>
-          <img src={`http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`}/>
+          <img src={`http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt="description"/>
           <p>
           {isCelsius ?  Math.floor((((weather.main?.temp - 273.15)* 9/5 + 32)- 32) * 5/9): Math.floor((weather.main?.temp - 273.15)* 9/5 + 32)}
           {' '}
