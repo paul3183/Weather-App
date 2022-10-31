@@ -18,6 +18,7 @@ const Time = () => {
     'Friday',
     'Saturday',
   ]
+  
   const day = weekday[hourTime.getDay()]
 
 

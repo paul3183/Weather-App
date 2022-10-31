@@ -14,6 +14,7 @@ body {
  
   background-position: center;
   background-size: cover;
+  
 }
 
 #root {
@@ -37,7 +38,7 @@ body {
 }
 
 .App:hover {
-  background-color: black;
+  /* background-color: black; */
   cursor: pointer;
   color: white;
   box-shadow: 5px 5px 6px 5px;
@@ -46,6 +47,11 @@ body {
   -moz-transition: 3s;
   -ms-transition: 3s;
   -o-transition: 3s;
+  transform: translateY(20px);
+  background: url('https://images.pexels.com/photos/1461887/pexels-photo-1461887.jpeg?auto=compress&cs=tinysrgb&w=800') ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title {
