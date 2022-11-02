@@ -26,7 +26,7 @@ const Time = () => {
 
   return (
     <div>
-      <p>{ `${hour < 10 ? 0 + hour : hour}` } : { `${minut < 10 ? 0 + minut : minut}`}, {`${dayNumber < 10 ? 0 + dayNumber : dayNumber}`} {day} {year}</p>
+      <p className='time'><b>{ `${hour < 10 ? 0 + hour : hour}` } : { `${minut < 10 ? 0 + minut : minut}`}, {`${dayNumber < 10 ? 0 + dayNumber : dayNumber}`} {day} {year} </b></p>
     </div>
   );
 };

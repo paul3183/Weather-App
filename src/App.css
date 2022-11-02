@@ -94,3 +94,7 @@ button{
   border: solid black 2px;
   font-weight: semibold;
 }
+
+.time {
+  font-weight: bold;
+}
