@@ -8,6 +8,8 @@ function App() {
 
   const [ weather, setWeather ] = useState({});
   const [ isCelsius, setIsCelsius ] = useState(true);
+  const [isVisible, setIsVisible ] = useState(true);
+
 
 
   useEffect (() => {
@@ -90,7 +92,8 @@ function App() {
 
   return (
     <>
-     <Time/>
+    <button className='show-hide' onClick={() => setIsVisible(!isVisible)}> Show / Hide </button>
+     {isVisible && <Time/>}
     <div className="App">
       <div className='title'>
         <h1>Wheather App</h1>
@@ -115,7 +118,6 @@ function App() {
       <button onClick={() => setIsCelsius(!isCelsius)}> Degrees ºF/ºC </button>
     </div>
     </>
-    
   )
 }
 

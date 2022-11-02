@@ -89,3 +89,8 @@ button{
 .fa-solid {
   align-items: flex-start;
 }
+
+.show-hide {
+  border: solid black 2px;
+  font-weight: semibold;
+}
